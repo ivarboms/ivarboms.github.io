@@ -1,0 +1,27 @@
+.big {
+	font-size: 72pt;
+}
+
+.spin {
+	animation: spin 2s linear infinite;
+	display: inline-block;
+}
+
+.spin.slow {
+	animation-duration: 10s;
+}
+
+.slice {
+	animation: spin 500ms linear infinite;
+	font-size: 50pt;
+	display: inline-block;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
